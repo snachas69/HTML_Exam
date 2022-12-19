@@ -1,0 +1,160 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header>menu{
+    display: flex;
+    flex-direction: row;
+}
+header>menu>li{
+    list-style: none;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+footer>div>div>a{
+    text-decoration: none;
+    color: white;
+}
+footer>div>div>a:hover{
+    color: gray;
+}
+footer>div>div>img{
+    width: 20%;
+    height: auto;
+}
+.logo{
+    width: 90px;
+    height: auto;
+    margin-right: 4%;
+}
+menu>li>a{
+    color: rgba(0, 0, 0, 0.516);
+}
+menu>li>a:hover{
+    color: rgb(165, 108, 42);
+}
+.block1{
+    background-image: url('../Images/Design\ \(1\).png');
+    background-size: cover;
+}
+.block2{
+    background-image: url("../Images/Place\ Your\ Image\ Here\ \(Double\ Click\ to\ Edit\)\ \(1\).png");
+    background-size: cover;
+    padding: 15%;
+}
+.block3{
+    display: grid;
+    grid-template-areas: 'paragraph-1 paragraph-2 paragraph-3';
+}
+.block4{
+    background-image: url('../Images/design\ \(2\).png');
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.block5{
+    background-image: url("../Images/Place\ Your\ Image\ Here8.png");
+    background-color: rgb(231, 231, 231);
+    background-size: cover;
+    padding: 7%;
+}
+.block6{
+    background-image: url("../Images/Design\ \(3\).png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 125vh;
+}
+.block7{
+    background-color: rgb(255, 201, 192);
+    display: flex;
+    flex-direction: row;
+}
+.block8{
+    background-image: url('../Images/Design\ \(4\).png');
+    background-size: cover;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 10%;
+}
+.block1>h1{
+    font-size: 55px;
+}
+.block1>div{
+    margin-left: 55%;
+    margin-top: 10%;
+    margin-bottom: 19%;
+}
+.block2>div{
+    margin-top: 5%;
+    margin-left: 3%;
+}
+#paragraph-1{
+    grid-area: paragraph-1;
+    margin: 10%;
+}
+#paragraph-2{
+    grid-area: paragraph-2;
+    margin: 10%;
+}
+#paragraph-3{
+    grid-area: paragraph-3;
+    margin: 10%;
+}
+.block3>div>img{
+    width: 40%;
+    height: auto;
+}
+.block4>div{
+    margin-left: 6%;
+    margin-top: 11%;
+    margin-bottom: 10%;
+}
+.block4>div>img{
+    width: 500px;
+    height: auto;
+}
+.block5>div{
+    margin-left: 55%;
+    margin-top: 5%;
+}
+.block6>div{
+    margin-top: 2%;
+}
+#galery-1{
+    grid-area: galery-1;
+}
+#galery-2{
+    grid-area: galery-2;
+}
+#galery-3{
+    grid-area: galery-3;
+}
+.galery{
+    display: grid;
+    grid-template-areas: "galery-1 galery-2 galery-3";
+    padding: 2%;
+}
+.galery>div{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+}
+.galery>div>img{
+    width: 100%;
+    height: auto;
+}
+.block7>div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+.block8>div>input{
+    margin: 1%;
+}
+.block8>div>textarea{
+    resize: none;
+}
