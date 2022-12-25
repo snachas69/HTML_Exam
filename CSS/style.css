@@ -1,20 +1,24 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
-header>menu{
+menu>li>a>span{
+    color: rgba(0, 0, 0, 0.500);
+}
+menu>li>a>span:hover{
+    color: rgba(169, 102, 43, 0.696);
+}
+footer>div{
+    flex-direction: row;
+}
+footer>div>div{
     display: flex;
     flex-direction: row;
 }
-header>menu>li{
-    list-style: none;
-    margin-left: 2%;
-    margin-right: 2%;
-}
-footer>div>div>a{
+footer>div>div>div>a{
     text-decoration: none;
     color: white;
 }
-footer>div>div>a:hover{
+footer>div>div>div>a:hover{
     color: gray;
 }
 footer>div>div>img{
@@ -25,12 +29,6 @@ footer>div>div>img{
     width: 90px;
     height: auto;
     margin-right: 4%;
-}
-menu>li>a{
-    color: rgba(0, 0, 0, 0.516);
-}
-menu>li>a:hover{
-    color: rgb(165, 108, 42);
 }
 .block1{
     background-image: url('../Images/Design\ \(1\).png');
@@ -44,6 +42,8 @@ menu>li>a:hover{
 .block3{
     display: grid;
     grid-template-areas: 'paragraph-1 paragraph-2 paragraph-3';
+    justify-content: center;
+    align-items: center;
 }
 .block4{
     background-image: url('../Images/design\ \(2\).png');
@@ -93,23 +93,23 @@ menu>li>a:hover{
 }
 #paragraph-1{
     grid-area: paragraph-1;
-    margin: 10%;
+    margin: 15%;
 }
 #paragraph-2{
     grid-area: paragraph-2;
-    margin: 10%;
+    margin: 15%;
 }
 #paragraph-3{
     grid-area: paragraph-3;
-    margin: 10%;
+    margin: 15%;
 }
 .block3>div>img{
-    width: 40%;
+    width: 100%;
     height: auto;
 }
 .block4>div{
-    margin-left: 6%;
-    margin-top: 11%;
+    margin-left: 10%;
+    margin-top: 10%;
     margin-bottom: 10%;
 }
 .block4>div>img{
@@ -138,11 +138,15 @@ menu>li>a:hover{
     padding: 2%;
 }
 .galery>div{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 3px 8px 1px #969696;
+  	-webkit-box-shadow: 4px 3px 8px 1px #969696;
     margin-left: 10%;
     margin-right: 10%;
     background-color: white;
 }
-.galery>div>img{
+.galery>div>div>img{
     width: 100%;
     height: auto;
 }
@@ -157,4 +161,103 @@ menu>li>a:hover{
 }
 .block8>div>textarea{
     resize: none;
+}
+
+@media screen and (max-width: 1270px){
+    .block4{
+        background-image: url('../Images/design\ \(2\).png');
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .block7{
+        background-color: rgb(255, 201, 192);
+        display: flex;
+        flex-direction: column;
+    }
+    .block4>div>img{
+        display: none;
+    }
+}
+@media screen and (max-width: 900px){
+    footer>div{
+        flex-direction: column;
+    }
+    .block1{
+        background-image: url('../Images/Design.png');
+        background-size: cover;
+    }
+    .block2{
+        background-image: url("../Images/Design.png");
+        background-size: cover;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        padding-right: 15%;
+        padding-left: 50%;
+    }
+    .block3{
+        display: grid;
+        grid-template-areas: 
+        'paragraph-1' 
+        'paragraph-2' 
+        'paragraph-3';
+        justify-content: center;
+        align-items: center;
+    }
+    .block4{
+        background-image: url('../Images/Design.png');
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20%;
+        padding-left: 30%;
+    }
+    .block5{
+        background-image: url("../Images/Design.png");
+        background-color: rgb(231, 231, 231);
+        background-size: cover;
+        padding: 7%;
+    }
+    .block6{
+        background-image: none;
+        background-color: #d0d0d0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200vh;
+    }
+    .block8{
+        background-image: url('../Images/Design.png');
+        background-size: cover;
+        padding-top: 30%;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 10%;
+    }
+    .galery{
+        display: grid;
+        grid-template-areas: 
+        "galery-1" 
+        "galery-2" 
+        "galery-3";
+    }
+    .galery>div{
+        margin-top: 5%;
+    }
+    .block6>div:nth-child(1){
+        padding: 5%;
+    }
+    .block7>div:nth-child(2){
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .block7>div>img{
+        height: auto;
+        width: 400px;
+    }
 }
